@@ -4,6 +4,14 @@ Standalone home for privacy policies and related legal pages for **all apps and 
 
 Served by GitHub Pages from `main`, repo root.
 
+## Live site
+**https://axialforge.github.io/app-policies/**
+
+- [Home](https://axialforge.github.io/app-policies/)
+- [Pagemark privacy policy](https://axialforge.github.io/app-policies/pagemark/)
+- [Terms of Service](https://axialforge.github.io/app-policies/terms/)
+- [Contact](https://axialforge.github.io/app-policies/contact/)
+
 | App | Policy URL path |
 |---|---|
 | Pagemark | `/pagemark/` |
