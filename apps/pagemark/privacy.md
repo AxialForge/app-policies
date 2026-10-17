@@ -1,6 +1,6 @@
 # Pagemark — Privacy Policy
 
-*Last updated 2026-10-14 · applies to Pagemark 0.13.2 and later*
+*Last updated 2026-10-17 · applies to Pagemark 0.13.2 and later*
 
 Pagemark is a private reading log. It has no accounts, no servers of its own, no advertising and no analytics. This page says exactly what the app stores and when anything leaves your phone.
 
@@ -11,7 +11,7 @@ Pagemark is a private reading log. It has no accounts, no servers of its own, no
 - **No AI inside the app.** No assistant, no AI features, and nothing you write is sent to or used to train an AI service.
 - **Your books stay on your phone** unless you save a backup, and then only where you put it.
 - **Free and open to inspect:** the code is public.
-- **The only internet use:** book searches (to Open Library and, unless turned off in Settings, Google Books), the GitHub build's update check, and whatever a cloud app does with a backup folder you choose.
+- **The only internet use:** book searches (to Open Library and, unless turned off in Settings, Google Books), and whatever a cloud app does with a backup folder you choose.
 - **About the barcode reader:** it uses Google's on-device ML Kit vision tool. Pagemark never saves or sends the camera picture, but the Google library may report anonymous technical information to Google.
 
 A test in the project fails if a tracking, advertising or AI package is added or the app contacts a new internet address.
@@ -33,8 +33,6 @@ Android's own cloud backup and device-transfer are switched off for this app, so
 | What | Where it goes | When | What is sent |
 |---|---|---|---|
 | Book search / ISBN lookup / covers | Open Library (openlibrary.org, Internet Archive) and Google Books (googleapis.com; can be turned off in Settings) | when you search, scan, or a cover is shown | the text you typed or the ISBN; your IP address is visible to them as for any website |
-| Update check | GitHub (api.github.com) | at most once a day while the app is open, if you leave "Check automatically" on | a request for the public release list; nothing about you or your library |
-| Update download | GitHub | when you tap Download & install | a request for the APK file |
 
 Pagemark does **not** send anything to its developer or to any analytics, advertising or crash-reporting service.
 
@@ -42,18 +40,18 @@ Pagemark does **not** send anything to its developer or to any analytics, advert
 Locked books stay in the same database but are hidden from the main library, Stats, Trash, search and CSV/JSON exports. They **are** included in whole-database exports and folder backups, which is why encrypting those with a passphrase is recommended. Searching for a book while in the locked library sends your search text to Open Library; add the book manually to avoid that.
 
 ## Permissions
-Internet (lookup, updates, backup) · Camera (barcode scanner, only when you open it) · Biometric (fingerprint/device unlock) · Install packages (to install a downloaded update) · Notifications (a warning when scheduled backups keep failing) · Background work, network state, wake lock, foreground service and start-after-reboot (scheduled backups and reminders; they let the system run those jobs and re-schedule reminders after a restart) · Vibrate (notification vibration) · Fingerprint (older-Android fingerprint unlock). Pagemark does not ask for location, contacts, microphone, storage or accounts.
+Internet (lookup, backup) · Camera (barcode scanner, only when you open it) · Biometric (fingerprint/device unlock) · Notifications (a warning when scheduled backups keep failing) · Background work, network state, wake lock, foreground service and start-after-reboot (scheduled backups and reminders; they let the system run those jobs and re-schedule reminders after a restart) · Vibrate (notification vibration) · Fingerprint (older-Android fingerprint unlock). Pagemark does not ask for location, contacts, microphone, storage or accounts.
 
 ## Your control
 - Export everything any time (Settings → Import and export), or back it up yourself.
 - Delete everything by uninstalling the app. Backup files you saved yourself stay wherever you put them; delete them there.
-- Turn off automatic update checks and automatic backups in Settings.
+- Turn off automatic backups in Settings. App updates are delivered by the Google Play Store under your Play settings; Pagemark itself does not check for or download updates.
 
 ## Children
 Pagemark is a general-purpose tool and collects no personal information from anyone, including children.
 
 ## Changes
-If this policy changes, the new version ships with the app (Settings → Updates → Version history) and in the repository: https://github.com/AxialForge/Pagemark
+If this policy changes, the new version ships with the app (Settings → Help and about) and in the repository: https://github.com/AxialForge/Pagemark
 
 ## Contact
 Questions or concerns: open an issue at https://github.com/AxialForge/Pagemark/issues.
